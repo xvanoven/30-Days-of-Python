@@ -76,58 +76,76 @@ print(str1[0])
 
 # 16. What is the last index of the string Coding For All.
 
-
+print(str1[-1])
 
 # 17. What character is at index 10 in "Coding For All" string.
 
-
+car10 = str1[10]
+if car10 is " ":
+    print("The character at index 10 in str1 is a space.")
+else:
+    print(car10)
 
 # 18. Create an acronym or an abbreviation for the name 'Python For Everyone'.
 
-
+str1 = 'Python for Everyone'
+acronym = "".join([word[0].upper() for word in str1.split()])
+print(acronym.lower())
 
 # 19. Create an acronym or an abbreviation for the name 'Coding For All'.
 
-
+str1 = 'Coding For All'
+acronym = "".join([word[0].upper() for word in str1.split()])
+print(acronym.lower())
 
 # 20. Use index to determine the position of the first occurrence of C in Coding For All.
 
-
+print(str1.lower().index('c'))
 
 # 21. Use index to determine the position of the first occurrence of F in Coding For All.
 
-
+print(str1.lower().index('f'))
 
 # 22. Use rfind to determine the position of the last occurrence of l in Coding For All People.
 
-
+str1 = 'Coding For All People'
+print(str1.rfind('l'))
 
 # 23. Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 
-
+str1 = 'You cannot end a sentence with because because because is a conjunction'
+print(str1.index('because'))
 
 # 24. Use rindex to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 
-
+print(str1.rindex('because'))
 
 # 25. Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 
-
+print(str1.replace('because because because ', ""))
 
 # 26. Find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 
-
+print(str1.index('because'))
 
 # 27. Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 
-
+print(str1.replace('because because because ', ""))
 
 # 28. Does 'Coding For All' start with a substring Coding?
 
-
+str1 = 'Coding For All'
+if 'Coding' in str1:
+    print("Coding For All has Coding as a substring.")
+else:
+    print("Coding For All does not have Coding as a substring.")
 
 # 29. Does 'Coding For All' end with a substring coding?
 
+if str1.endswith('coding'):
+    print("Yes!")
+else:
+    print("No.")
 
 # 30. '   Coding For All      '  , remove the left and right trailing spaces in the given string.
 
